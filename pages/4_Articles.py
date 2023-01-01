@@ -19,20 +19,20 @@ def load_lottieurl(url):
 
 
 lottie_disease = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_gkgqj2yq.json")
-img_actinic = Image.open("images/Actinic_Keratosis.jpg")
-img_basal = Image.open("images/basal-cell-carcinoma.jpg")
-img_dermatofibroma = Image.open("images/Dermatofibroma.jpg")
-img_melanoma = Image.open("images/Melanoma.jpg")
-img_nevus = Image.open("images/Nevus.jpg")
-img_pigmented = Image.open("images/pigmented.jpg")
-img_Seborrheic = Image.open("images/Seborrheic.jpg")
-img_Squamous  = Image.open("images/Squamous .jpg")
-img_Vascular = Image.open("images/Vascular.jpg")
+img_actinic = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Actinic_Keratosis.jpg")
+img_basal = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/basal-cell-carcinoma.jpg")
+img_dermatofibroma = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Dermatofibroma.jpg")
+img_melanoma = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Melanoma.jpg")
+img_nevus = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Nevus.jpg")
+img_pigmented = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/pigmented.jpg")
+img_Seborrheic = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Seborrheic.jpg")
+img_Squamous  = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Squamous.jpg")
+img_Vascular = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Vascular .jpg")
 
 # st.title("Main Page")
-st.subheader("Learn More")
+st.title("Learn More")
 st_lottie(lottie_disease, height=300, key="disease")
-st.title("Read articles about some common diseases that are usually found in people.")
+st.subheader("Read articles about some common skin diseases that are usually found in people.")
 
 with st.container():
     st.write("---")
@@ -51,14 +51,21 @@ with st.container():
             - photodynamic therapy (PDT), where special cream is applied to the patches and a light is shone onto them to kill abnormal skin cells
             """
         )
-        st.write("[Learn More](https://www.nhs.uk/conditions/actinic-keratoses/#:~:text=Actinic%20keratoses%20(also%20called%20solar,further%20damage%20to%20your%20skin.)")
+        st.write("[Learn More](https://www.nhs.uk/conditions/actinic-keratoses)")
     with right_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_actinic)
 
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_basal)
 
     with right_column:
@@ -106,12 +113,20 @@ with st.container():
         st.write(
             "[Learn More](https://www.medicalnewstoday.com/articles/318870#treatment)")
     with right_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_dermatofibroma)
 
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_melanoma)
     with right_column:
         st.header("Melanoma")
@@ -159,6 +174,10 @@ with st.container():
         st.write(
             "[Learn More](https://www.healthline.com/health/nevus#diagnosis)")
     with right_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_nevus)
 
 
@@ -166,9 +185,13 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_Seborrheic)
     with right_column:
-        st.header("Seborrheic Keratosis")
+        st.header("Seborrheic keratosis")
         st.write("##")
         st.write(
             """
@@ -186,7 +209,7 @@ with st.container():
             """
         )
         st.write(
-            "[Learn More](https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878#:~:text=A%20seborrheic%20keratosis%20(seb%2Do,or%20scaly%20and%20slightly%20raised.)")
+            "[Learn More](https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878)")
     
 
 with st.container():
@@ -213,6 +236,10 @@ with st.container():
         st.write(
             "[Learn More](https://www.mayoclinic.org/diseases-conditions/squamous-cell-carcinoma/symptoms-causes/syc-20352480)")
     with right_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_Squamous)   
 
 
@@ -220,6 +247,9 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
+        st.write("##")
+        st.write("##")
+        st.write("##")
         st.image(img_Vascular)
     with right_column:
         st.header("Vascular lesion")
