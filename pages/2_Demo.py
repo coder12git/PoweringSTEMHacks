@@ -41,26 +41,26 @@ if st.button("Predict"):
 
             model = load_model()
 
-            img = PIL.Image.open(pic)
-            img = img.resize((180, 180))
-            img = tf.keras.preprocessing.image.img_to_array(img)
-            img = tf.keras.applications.mobilenet.preprocess_input(img)
-            img = tf.expand_dims(img, axis=0)
+            with st.spinner("Predicting..."):
+                img = PIL.Image.open(pic)
+                img = img.resize((180, 180))
+                img = tf.keras.preprocessing.image.img_to_array(img)
+                img = tf.expand_dims(img, axis=0)
 
-            prediction = model.predict(img)
-            prediction = tf.nn.softmax(prediction)
+                prediction = model.predict(img)
+                prediction = tf.nn.softmax(prediction)
 
-            score = tf.reduce_max(prediction)
-            score = tf.round(score * 100, 2)
+                score = tf.reduce_max(prediction)
+                score = tf.round(score * 100, 2)
 
-            prediction = tf.argmax(prediction, axis=1)
-            prediction = prediction.numpy()
-            prediction = prediction[0]
-            prediction = labels[prediction].title()
+                prediction = tf.argmax(prediction, axis=1)
+                prediction = prediction.numpy()
+                prediction = prediction[0]
 
-            st.write(f"**Prediction:** `{prediction}`")
-            st.write(f"**Confidence:** `{score:.2f}%`")
-            # st.info(f"The model predicts that the lesion is a **{prediction}** with a confidence of {score}%")
+                disease = labels[prediction].title()
+                st.write(f"**Prediction:** `{disease}`")
+                st.write(f"**Confidence:** `{score:.2f}%`")
+                # st.info(f"The model predicts that the lesion is a **{prediction}** with a confidence of {score}%")
 
         st.warning(":warning: This is not a medical diagnosis. Please consult a doctor for a professional diagnosis.")
     else:
