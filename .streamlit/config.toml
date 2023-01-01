@@ -6,7 +6,7 @@ fastReruns = true
 
 [server]
 runOnSave = true
-port = 3000
+port = 8501
 maxUploadSize = 10
 maxMessageSize = 10
 
