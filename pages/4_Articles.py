@@ -19,15 +19,16 @@ def load_lottieurl(url):
 
 
 lottie_disease = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_gkgqj2yq.json")
-img_actinic = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Actinic_Keratosis.jpg")
-img_basal = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/basal-cell-carcinoma.jpg")
-img_dermatofibroma = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Dermatofibroma.jpg")
-img_melanoma = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Melanoma.jpg")
-img_nevus = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Nevus.jpg")
-img_pigmented = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/pigmented.jpg")
-img_Seborrheic = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Seborrheic.jpg")
-img_Squamous  = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Squamous.jpg")
-img_Vascular = Image.open("C:/Users/suruc/PoweringSTEMHacks/images/Vascular .jpg")
+
+img_actinic = Image.open("./images/Actinic_Keratosis.jpg")
+img_basal = Image.open("./images/basal-cell-carcinoma.jpg")
+img_dermatofibroma = Image.open("./images/Dermatofibroma.jpg")
+img_melanoma = Image.open("./images/Melanoma.jpg")
+img_nevus = Image.open("./images/Nevus.jpg")
+img_pigmented = Image.open("./images/pigmented.jpg")
+img_Seborrheic = Image.open("./images/Seborrheic.jpg")
+img_Squamous  = Image.open("./images/Squamous.jpg")
+img_Vascular = Image.open("./images/Vascular .jpg")
 
 # st.title("Main Page")
 st.title("Learn More")
@@ -210,7 +211,7 @@ with st.container():
         )
         st.write(
             "[Learn More](https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878)")
-    
+
 
 with st.container():
     st.write("---")
@@ -240,7 +241,7 @@ with st.container():
         st.write("##")
         st.write("##")
         st.write("##")
-        st.image(img_Squamous)   
+        st.image(img_Squamous)
 
 
 with st.container():
@@ -263,4 +264,4 @@ with st.container():
         )
         st.write(
             "[Learn More](https://www.ssmhealth.com/cardinal-glennon/pediatric-plastic-reconstructive-surgery/hemangiomas)")
-    
+
