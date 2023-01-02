@@ -3,8 +3,8 @@ gatherUsageStats = false
 
 [server]
 runOnSave = true
-maxUploadSize = 10
-maxMessageSize = 10
+maxUploadSize = 50
+maxMessageSize = 50
 
 [theme]
 primaryColor="#F63366"
