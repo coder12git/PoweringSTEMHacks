@@ -62,6 +62,8 @@ if st.button("Predict"):
                 st.write(f"**Confidence:** `{score:.2f}%`")
                 # st.info(f"The model predicts that the lesion is a **{prediction}** with a confidence of {score}%")
 
-        st.warning(":warning: This is not a medical diagnosis. Please consult a doctor for a professional diagnosis.")
+        st.warning(
+            ":warning: This is not a medical diagnosis. Please consult a doctor for a professional diagnosis."
+        )
     else:
         st.error("Please upload an image")

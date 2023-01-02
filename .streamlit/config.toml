@@ -1,12 +1,8 @@
 [browser]
 gatherUsageStats = false
 
-[runner]
-fastReruns = true
-
 [server]
 runOnSave = true
-port = 3000
 maxUploadSize = 10
 maxMessageSize = 10
 
@@ -14,5 +10,4 @@ maxMessageSize = 10
 primaryColor="#F63366"
 backgroundColor="#FCF2E5"
 secondaryBackgroundColor="#F8E4C7"
-textColor="#262730"
-font="sans serif"
+textColor="#302730"

@@ -1,16 +1,6 @@
-# Change links
-
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
-
-st.set_page_config(
-    page_title="Skin Cancer",
-    page_icon="♋",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -18,6 +8,13 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+
+st.set_page_config(
+    page_title="Skin Cancer",
+    page_icon="♋",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 # lottie_health = load_lottieurl(
 #     "https://assets3.lottiefiles.com/private_files/lf30_bftsl4ju.json"
@@ -57,21 +54,16 @@ Our application detects the following diseases:
 
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.write("##")
+    cols = st.columns(2)
+    with cols[0]:
         st.header("How it works?")
-        st.write("##")
-        st.write(
-            """
-            Our application utilizes machine learning to predict what skin disease you may have, from just your skin images!
-            We then recommend you specialized doctors based on your type of disease, if our model predicts you're healthy we'll suggest you a general doctor.
-            """
-        )
-        st.write("##")
-        st.write("[Learn More>](https://www.youtube.com/watch?v=qjx9IkM0_-Y)")
-    with right_column:
-        st.write("##")
+        """
+        Our application utilizes machine learning to predict what skin disease you may have, from just your skin images!
+        We then recommend you specialized doctors based on your type of disease, if our model predicts you're healthy we'll suggest you a general doctor.
+        ##
+        [Learn More >](https://www.youtube.com/watch?v=qjx9IkM0_-Y)
+        """
+    with cols[1]:
         st_lottie(lottie_healthy, height=300, key="healthy")
 
 # st.sidebar.success("Select the page above.")
