@@ -7,15 +7,15 @@ This project is submitted for [PoweringSTEMHacks](https://poweringstemhacks.devp
 **Melanoma** is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 Our application detects the following diseases:
-            - Actinic keratosis,
-            - Basal cell carcinoma,
-            - Dermatofibroma,
-            - Melanoma,
-            - Nevus,
-            - Pigmented benign keratosis,
-            - Seborrheic keratosis,
-            - Squamous cell carcinoma,
-            - Vascular lesion.
+- Actinic keratosis
+- Basal cell carcinoma
+- Dermatofibroma
+- Melanoma
+- Nevus
+- Pigmented benign keratosis
+- Seborrheic keratosis
+- Squamous cell carcinoma
+- Vascular lesion
 
 ---
 
@@ -92,7 +92,6 @@ We plan to finish this challenge and create a complete web application and help 
   <img src="https://contrib.rocks/image?repo=coder12git/PoweringSTEMHacks"/>
 </a>
 
----
 
 ## Show your support
 
