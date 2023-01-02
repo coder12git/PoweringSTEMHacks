@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 
+
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -54,7 +55,9 @@ with st.container():
             """
         )
         st.write("##")
-        st.write("[Learn More >](https://www.researchgate.net/publication/356093241_Characteristics_of_publicly_available_skin_cancer_image_datasets_a_systematic_review)")
+        st.write(
+            "[Learn More >](https://www.researchgate.net/publication/356093241_Characteristics_of_publicly_available_skin_cancer_image_datasets_a_systematic_review)"
+        )
     with right_column:
         st_lottie(lottie_health, height=500, key="check")
 
