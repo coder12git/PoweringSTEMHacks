@@ -2,6 +2,13 @@ import PIL
 import streamlit as st
 import tensorflow as tf
 
+st.set_page_config(
+    page_title="Skin Cancer",
+    page_icon="♋",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 
 @st.cache(allow_output_mutation=True)
 def load_model():
