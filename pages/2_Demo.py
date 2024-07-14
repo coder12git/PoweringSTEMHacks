@@ -10,9 +10,9 @@ st.set_page_config(
 )
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("./model/model.h5")
+    model = tf.keras.models.load_model("./model/saved_model.keras")
     return model
 
 
